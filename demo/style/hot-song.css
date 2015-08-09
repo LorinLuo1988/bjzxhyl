@@ -9,29 +9,37 @@
     overflow: hidden;
 }
 .hot-song .hot-song-top .content .hot-song-ising {
-    margin-top: 60px;
+    margin: 60px 0px 0px 55px;
 }
 .hot-song .hot-song-top .content .img-container {
     position: relative;
-    width: 300px;
+    left: 165px;
+    width: 263px;
     height: 216px;
 }
 .hot-song .hot-song-top .content .img-container .hot-song-quick-mark {
     position: absolute;
+    z-index: 2;
     top: 49px;
-    left: 155px;
+    left: 55px;
     width: 170px;
     height: 170px;
+    -ms-animation: move-top 1s linear 0s 1;
+    -webkit-animation: move-top 1s linear 0s 1;
+    -moz-animation: move-top 1s linear 0s 1;
+    -o-animation: move-top 1s linear 0s 1;
+    animation: move-top 1s linear 0s 1;
 }
 .hot-song .hot-song-top .content .img-container .common-bg-sound {
     position: absolute;
-    left: 100px;
+    z-index: 1;
+    left: 0px;
     top: 10px;
-    -ms-animation: bg-sound 1.2s linear 0s 1;
-    -webkit-animation: bg-sound 1.2s linear 0s 1;
-    -moz-animation: bg-sound 1.2s linear 0s 1;
-    -o-animation: bg-sound 1.2s linear 0s 1;
-    animation: bg-sound 1.2s linear 0s 1;
+    -ms-animation: bg-sound 1s linear 0s 1;
+    -webkit-animation: bg-sound 1s linear 0s 1;
+    -moz-animation: bg-sound 1s linear 0s 1;
+    -o-animation: bg-sound 1s linear 0s 1;
+    animation: bg-sound 1s linear 0s 1;
 }
 
 /*-------------hot-song-top end--------------*/
@@ -42,6 +50,29 @@
 }
 .hot-song .hot-song-bottom .content {
     width: 1000px;
-    height: 1700px;
+    margin: 0 auto;
+}
+.hot-song .hot-song-bottom .content .song-list-title {
+    font-size: 24px;
+    color: #000;
+    margin: 53px 0px 0px 55px;
+    border-left: 4px solid #ed2445;
+    padding-left: 15px;
+}
+.hot-song .hot-song-bottom .content .song-list {
+    width: 890px;
+    margin: 0 auto;
+    list-style-type: none;
+}
+.hot-song .hot-song-bottom .content .song-list li {
+    float: left;
+    width: 262px;
+    height: 260px;
+    margin: 90px 52px 0px 0px;
+    background: url(img/primary-top.jpg);
+    cursor: pointer;
+}
+.hot-song .hot-song-bottom .content .song-list li.no-border-right {
+    margin-right: 0px;
 }
 /*-------------hot-song-bottom start--------------*/

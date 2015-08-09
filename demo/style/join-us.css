@@ -1,0 +1,56 @@
+.join-us .join-us-top {
+    background: url(img/primary-top.jpg);
+}
+.join-us .join-us-top .content {
+    width: 1000px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.join-us .join-us-top .content img {
+    margin: 99px 0px 0px 100px;
+}
+
+.join-us .join-us-bottom {
+
+}
+.join-us .join-us-bottom .content{
+    width: 1000px;
+    margin: 0 auto;
+    color: #000;
+    overflow: hidden;
+}
+.join-us .join-us-bottom .content .join-us-title {
+    padding-left: 16px;
+    border-left: 4px solid #ed2445;
+    font-size: 24px;
+    margin: 95px 0px 0px 99px;
+}
+.join-us .join-us-bottom .content .join-us-content {
+    padding: 32px 0px 0px 99px;
+}
+.join-us .join-us-bottom .content h4 {
+    font-size: 18px;
+    margin: 12px 0px;
+}
+.join-us .join-us-bottom .content p {
+    text-indent: 35px;
+    line-height: 25px;
+    font-size: 14px;
+}
+.join-us .join-us-bottom .content .join-us-content  .contact-email {
+    margin: 86px 0px 50px 0px;
+    height: 48px;
+    padding-left: 78px;
+    background: url(img/email.png) no-repeat;
+    overflow: hidden;
+}
+.join-us .join-us-bottom .content .join-us-content  .contact-email p {
+    margin: -3px 0px 9px 0px;
+    text-indent: 0px;
+}
+.join-us .join-us-bottom .content .join-us-content  .contact-email a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: #000;
+}

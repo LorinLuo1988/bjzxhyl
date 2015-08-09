@@ -42,7 +42,7 @@
 
     Primary.prototype.animate = function () {
         function animation () {
-            if ( $('.primary-bottom .song').offset().top < document.documentElement.clientHeight +$(document).scrollTop() - 100) {
+            if ( $('.primary-bottom .song').length && $('.primary-bottom .song').offset().top < document.documentElement.clientHeight +$(document).scrollTop() - 100) {
                 $('.primary .primary-bottom .content .song .song-img').css({
                     visibility: 'visible',
                     animation: 'song-img 1s linear 0s 1',
@@ -71,7 +71,7 @@
                 });
             }
 
-            if ( $('.primary-bottom .social-song').offset().top < document.documentElement.clientHeight + $(document).scrollTop() - 100) {
+            if ( $('.primary-bottom .social-song').length && $('.primary-bottom .social-song').offset().top < document.documentElement.clientHeight + $(document).scrollTop() - 100) {
                 $('.primary .primary-bottom .content .social-song .new-people-entry').css({
                     visibility: 'visible',
                     animation: 'new-people-entry 1s linear 0s 1',

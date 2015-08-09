@@ -594,7 +594,7 @@
 @keyframes move-top
 {
     0% {
-        top: 100px;
+        top: 216px;
         opacity: 0;
     }
     100% {
@@ -605,7 +605,7 @@
 @-ms-keyframes move-top /* IE9 */
 {
     0% {
-        top: 100px;
+        top: 216px;
         opacity: 0;
     }
     100% {
@@ -616,7 +616,7 @@
 @-moz-keyframes move-top /* Firefox */
 {
     0% {
-        top: 100px;
+        top: 216px;
         opacity: 0;
     }
     100% {
@@ -627,7 +627,7 @@
 @-webkit-keyframes move-top /* Safari 和 Chrome */
 {
     0% {
-        top: 100px;
+        top: 216px;
         opacity: 0;
     }
     100% {
@@ -638,7 +638,7 @@
 @-o-keyframes move-top /* Opera */
 {
     0% {
-        top: 100px;
+        top: 216px;
         opacity: 0;
     }
     100% {
