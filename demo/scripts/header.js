@@ -55,7 +55,6 @@
             });
         };
 
-        window.scrollTo(0,0);
         var headerObj = new Header($('.header .url-nav'), $('.language-toggle'));
 
 //        $('.footer').load();

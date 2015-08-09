@@ -267,7 +267,76 @@
 }
 .primary .primary-bottom .content {
     width: 1000px;
-    height: 935px;
+    height: 940px;
     margin: 0 auto;
     position: relative;
+}
+.primary .primary-bottom .content .song {
+    height: 394px;
+    margin-top: 140px;
+    margin-left: 59px;
+    position: relative;
+}
+.primary .primary-bottom .content .song .song-img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.primary .primary-bottom .content .song .tip-img {
+    position: absolute;
+    top: 210px;
+    left: 365px;
+}
+.primary .primary-bottom .content .song .line {
+    position: absolute;
+    top: 394px;
+    left: -88.5px;
+}
+.primary .primary-bottom .content .song .text {
+    position: absolute;
+    top: 173px;
+    left: 490px;
+
+}
+.primary .primary-bottom .content .song .text h4 {
+    font-size: 25px;
+    color: #000;
+    text-align: center;
+}
+.primary .primary-bottom .content .song .text p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #999;
+}
+.primary .primary-bottom .content .social-song {
+    height: 480px;
+    position: relative;
+    margin-top: 67px;
+}
+.primary .primary-bottom .content .social-song .text {
+    position: absolute;
+    top: 270px;
+    left: 50px;
+
+}
+.primary .primary-bottom .content .social-song .text h4 {
+    font-size: 25px;
+    color: #000;
+    text-align: center;
+}
+.primary .primary-bottom .content .social-song .text p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #999;
+    text-align: center;
+}
+.primary .primary-bottom .content .social-song .new-people-entry {
+    position: absolute;
+    top: 0px;
+    left: 549px;
+}
+.primary .primary-bottom .content .social-song .line {
+    position: absolute;
+    top: 473px;
+    left: 448px;
 }
