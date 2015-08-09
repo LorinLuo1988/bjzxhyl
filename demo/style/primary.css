@@ -1,67 +1,103 @@
 /*-------------bg-sound-rotate start------------*/
-@-ms-keyframes bg-sound-rotate /* IE9 */
+@keyframes bg-sound
 {
-    from {-ms-transform: rotate(300deg);}
-    to {-ms-transform: rotate3(360deg);}
+    0%{
+        opacity:0;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg)
+    }
+    100%{
+        opacity:1;-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg)
+    }
 }
-@-moz-keyframes bg-sound-rotate /* Firefox */
+@-ms-keyframes bg-sound /* IE9 */
 {
-    from {-moz-transform: rotate(300deg);}
-    to {-moz-transform: rotate(360deg);}
+    0%{
+        opacity:0;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg)
+    }
+    100%{
+        opacity:1;-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg)
+    }
 }
-@-webkit-keyframes bg-sound-rotate /* Safari 和 Chrome */
+@-moz-keyframes bg-sound /* Firefox */
 {
-    from {-webkit-transform: rotate(300deg);}
-    to {-webkit-transform: rotate(360deg);}
+    0%{
+        opacity:0;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg)
+    }
+    100%{
+        opacity:1;-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg)
+    }
 }
-@-o-keyframes bg-sound-rotate /* Opera */
+@-webkit-keyframes bg-sound /* Safari 和 Chrome */
 {
-    from {-o-transform: rotate(300deg);}
-    to {-o-transform: rotate(360deg);}
+    0%{
+        opacity:0;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg)
+    }
+    100%{
+        opacity:1;-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg)
+    }
+}
+@-o-keyframes bg-sound /* Opera */
+{
+    0%{
+        opacity:0;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg)
+    }
+    100%{
+        opacity:1;-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg)
+    }
 }
 /*-------------bg-sound-rotate end------------*/
 
 /*-------------recently-release start------------*/
-@-ms-keyframes recently-release /* IE9 */
+@keyframes recently-release
 {
-    from {
+    0% {
         top: 0px;
         opacity: 0.5;
     }
-    to {
+    100% {
+        top: 190px;
+        opacity: 1;
+    }
+}
+@-ms-keyframes recently-release /* IE9 */
+{
+    0% {
+        top: 0px;
+        opacity: 0.5;
+    }
+    100% {
         top: 190px;
         opacity: 1;
     }
 }
 @-moz-keyframes recently-release /* Firefox */
 {
-    from {
+    0% {
         top: 0px;
         opacity: 0.5;
     }
-    to {
+    100% {
         top: 190px;
         opacity: 1;
     }
 }
 @-webkit-keyframes recently-release /* Safari 和 Chrome */
 {
-    from {
+    0% {
         top: 0px;
         opacity: 0.5;
     }
-    to {
+    100% {
         top: 190px;
         opacity: 1;
     }
 }
 @-o-keyframes recently-release /* Opera */
 {
-    from {
+    0% {
         top: 0px;
         opacity: 0.5;
     }
-    to {
+    100% {
         top: 190px;
         opacity: 1;
     }
@@ -69,46 +105,57 @@
 /*-------------recently-release end------------*/
 
 /*-------------iSing-star start------------*/
-@-ms-keyframes iSing-star /* IE9 */
+@keyframes iSing-star
 {
-    from {
+    0% {
         top: 0px;
         opacity: 0.5;
     }
-    to {
+    100% {
+        top: 80px;
+        opacity: 1;
+    }
+}
+@-ms-keyframes iSing-star /* IE9 */
+{
+    0% {
+        top: 0px;
+        opacity: 0.5;
+    }
+    100% {
         top: 80px;
         opacity: 1;
     }
 }
 @-moz-keyframes iSing-star /* Firefox */
 {
-    from {
+    0% {
         top: 0px;
         opacity: 0.5;
     }
-    to {
+    100% {
         top: 80px;
         opacity: 1;
     }
 }
 @-webkit-keyframes iSing-star /* Safari 和 Chrome */
 {
-    from {
+    0% {
         top: 0px;
         opacity: 0.5;
     }
-    to {
+    100% {
         top: 80px;
         opacity: 1;
     }
 }
 @-o-keyframes iSing-star /* Opera */
 {
-    from {
+    0% {
         top: 0px;
         opacity: 0.5;
     }
-    to {
+    100% {
         top: 80px;
         opacity: 1;
     }
@@ -186,17 +233,17 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    z-index: 1;
-    -ms-animation: bg-sound-rotate 1.2s linear 0s 1;
-    -webkit-animation: bg-sound-rotate 1.2s linear 0s 1;
-    -moz-animation: bg-sound-rotate 1.2s linear 0s 1;
-    -o-animation: bg-sound-rotate 1.2s linear 0s 1;
+    -ms-animation: bg-sound 1.2s linear 0s 1;
+    -webkit-animation: bg-sound 1.2s linear 0s 1;
+    -moz-animation: bg-sound 1.2s linear 0s 1;
+    -o-animation: bg-sound 1.2s linear 0s 1;
+    animation: bg-sound 1.2s linear 0s 1;
 }
 .primary .primary-top .content .content-right .recently-release {
     position: absolute;
     top: 190px;
     left:120px;
-    z-index: 2;
+    animation: recently-release 1s linear 0s 1;
     -ms-animation: recently-release 1s linear 0s 1;
     -webkit-animation: recently-release 1s linear 0s 1;
     -moz-animation: recently-release 1s linear 0s 1;
@@ -206,8 +253,7 @@
     position: absolute;
     top: 80px;
     left:250px;
-    z-index: 3;
-    opacity: 1;
+    animation: iSing-star 1s linear 0s 1;
     -ms-animation: iSing-star 1s linear 0s 1;
     -webkit-animation: iSing-star 1s linear 0s 1;
     -moz-animation: iSing-star 1s linear 0s 1;
