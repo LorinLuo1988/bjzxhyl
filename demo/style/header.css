@@ -150,7 +150,9 @@ body {
     color: #999999;
 }
 /*------------header end-----------*/
-
+.bg>.content {
+    min-height: 800px;
+}
 /*------------footer end-----------*/
 .footer {
     width: 100%;

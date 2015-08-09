@@ -1,0 +1,47 @@
+/*-------------hot-song-top start--------------*/
+.hot-song .hot-song-top {
+    background: url(img/primary-top.jpg);
+}
+.hot-song .hot-song-top .content {
+    width: 1000px;
+    height: 216px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.hot-song .hot-song-top .content .hot-song-ising {
+    margin-top: 60px;
+}
+.hot-song .hot-song-top .content .img-container {
+    position: relative;
+    width: 300px;
+    height: 216px;
+}
+.hot-song .hot-song-top .content .img-container .hot-song-quick-mark {
+    position: absolute;
+    top: 49px;
+    left: 155px;
+    width: 170px;
+    height: 170px;
+}
+.hot-song .hot-song-top .content .img-container .common-bg-sound {
+    position: absolute;
+    left: 100px;
+    top: 10px;
+    -ms-animation: bg-sound 1.2s linear 0s 1;
+    -webkit-animation: bg-sound 1.2s linear 0s 1;
+    -moz-animation: bg-sound 1.2s linear 0s 1;
+    -o-animation: bg-sound 1.2s linear 0s 1;
+    animation: bg-sound 1.2s linear 0s 1;
+}
+
+/*-------------hot-song-top end--------------*/
+
+/*-------------hot-song-bottom start--------------*/
+.hot-song .hot-song-bottom {
+    background-color: #ffffff;
+}
+.hot-song .hot-song-bottom .content {
+    width: 1000px;
+    height: 1700px;
+}
+/*-------------hot-song-bottom start--------------*/

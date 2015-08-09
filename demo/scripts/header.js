@@ -1,6 +1,8 @@
 /**
  * Created by Administrator on 2015/8/9.
  */
+window.windowCurrentUrl = 'primary';
+
 (function ($) {
     $(function () {
         var Header = function (urlNav, languageToggle) {
@@ -30,8 +32,16 @@
             var navList = this.urlNav.find('li');
 
             navList.on('click', function () {
-                navList.removeClass('imgShow');
-                $(this).addClass('imgShow');
+                if (!$(this).hasClass('imgShow')) {
+                    windowCurrentUrl = $(this).attr('data-url');
+                    navList.removeClass('imgShow');
+                    $(this).addClass('imgShow');
+
+                    $('.content').load('template/' + windowCurrentUrl + '.html', function () {
+                        window.scrollTo(0, 0);
+                        primaryObj.initialize();;
+                    });
+                }
             });
         };
 
@@ -56,7 +66,6 @@
         };
 
         var headerObj = new Header($('.header .url-nav'), $('.language-toggle'));
-
 //        $('.footer').load();
     });
 })(jQuery);

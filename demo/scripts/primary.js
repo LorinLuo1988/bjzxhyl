@@ -104,8 +104,9 @@
     };
 
     var primaryObj = new Primary();
+    window.primaryObj = primaryObj;
 
-    $('.content').load('template/primary.html', function () {
+    $('.content').load('template/' + windowCurrentUrl + '.html', function () {
         primaryObj.initialize();;
     });
 })(jQuery)

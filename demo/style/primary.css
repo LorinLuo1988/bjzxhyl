@@ -78,7 +78,7 @@
 .primary .primary-top .content .content-right .recently-release {
     position: absolute;
     top: 190px;
-    left:120px;
+    left: 55px;
     animation: recently-release 1s linear 0s 1;
     -ms-animation: recently-release 1s linear 0s 1;
     -webkit-animation: recently-release 1s linear 0s 1;
@@ -88,7 +88,7 @@
 .primary .primary-top .content .content-right .iSing-star {
     position: absolute;
     top: 80px;
-    left:250px;
+    left: 185px;
     animation: iSing-star 1s linear 0s 1;
     -ms-animation: iSing-star 1s linear 0s 1;
     -webkit-animation: iSing-star 1s linear 0s 1;
