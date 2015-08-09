@@ -12,7 +12,19 @@
         Header.prototype.initialize = function () {
             this.navToggle();
             this.langToggle();
+            this.IE7Handle();
         };
+
+        Header.prototype.IE7Handle = function () {
+            if (navigator.userAgent.indexOf('MSIE 7.0') != -1) {
+                var navList = this.urlNav.find('li');
+
+                navList.each(function (index, dom) {
+                    var offsetWidth = $(this).innerWidth();
+                    $(this).find('img').css('width', offsetWidth + 'px');
+                });
+            }
+        }
 
         Header.prototype.navToggle = function () {
             var navList = this.urlNav.find('li');
@@ -44,5 +56,7 @@
         };
 
         var headerObj = new Header($('.header .url-nav'), $('.language-toggle'));
+
+//        $('.footer').load();
     });
 })(jQuery);
