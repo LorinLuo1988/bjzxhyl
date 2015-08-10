@@ -232,7 +232,7 @@
         height: 9px;
     }
     100% {
-        width: 104px;
+        width: 68px;
         height: 9px;
     }
 }
@@ -247,7 +247,7 @@
         height: 9px;
     }
     100% {
-        width: 104px;
+        width: 68px;
         height: 9px;
     }
 }
@@ -262,7 +262,7 @@
         height: 9px;
     }
     100% {
-        width: 104px;
+        width: 68px;
         height: 9px;
     }
 }
@@ -277,7 +277,7 @@
         height: 9px;
     }
     100% {
-        width: 104px;
+        width: 68px;
         height: 9px;
     }
 }
@@ -292,7 +292,7 @@
         height: 9px;
     }
     100% {
-        width: 104px;
+        width: 68px;
         height: 9px;
     }
 }
@@ -440,13 +440,15 @@
     0% {
         width: 0px;
         height: 9px;
+        visibility: hidden;
     }
     50% {
         width: 10px;
         height: 9px;
+        visibility: visible;
     }
     100% {
-        width: 104px;
+        width: 68px;
         height: 9px;
     }
 }
@@ -455,13 +457,15 @@
     0% {
         width: 0px;
         height: 9px;
+        visibility: hidden;
     }
     50% {
         width: 10px;
         height: 9px;
+        visibility: visible;
     }
     100% {
-        width: 104px;
+        width: 68px;
         height: 9px;
     }
 }
@@ -470,13 +474,15 @@
     0% {
         width: 0px;
         height: 9px;
+        visibility: hidden;
     }
     50% {
         width: 10px;
         height: 9px;
+        visibility: visible;
     }
     100% {
-        width: 104px;
+        width: 68px;
         height: 9px;
     }
 }
@@ -485,13 +491,15 @@
     0% {
         width: 0px;
         height: 9px;
+        visibility: hidden;
     }
     50% {
         width: 10px;
         height: 9px;
+        visibility: visible;
     }
     100% {
-        width: 104px;
+        width: 68px;
         height: 9px;
     }
 }
@@ -500,13 +508,15 @@
     0% {
         width: 0px;
         height: 9px;
+        visibility: hidden;
     }
     50% {
         width: 10px;
         height: 9px;
+        visibility: visible;
     }
     100% {
-        width: 104px;
+        width: 68px;
         height: 9px;
     }
 }

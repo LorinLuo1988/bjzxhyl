@@ -32,14 +32,27 @@ window.windowCurrentUrl = 'primary';
             var navList = this.urlNav.find('li');
 
             navList.on('click', function () {
+                console.log(1)
                 if (!$(this).hasClass('imgShow')) {
                     windowCurrentUrl = $(this).attr('data-url');
                     navList.removeClass('imgShow');
                     $(this).addClass('imgShow');
 
-                    $('.content').load('template/' + windowCurrentUrl + '.html', function () {
-                        window.scrollTo(0, 0);
-                        primaryObj.initialize();;
+                    $.ajax('template/' + windowCurrentUrl + '.html', {
+                        type: "GET",
+                        success: function(response){
+                            window.scrollTo(0, 0);
+
+                            $('.bg .content').html(response);
+
+                            if ($('.primary').length) {
+                                primaryObj.initialize();
+                            }
+
+                            if ($('.join-us .join-us-content h4').length) {
+                                joinUsObj =  new JoinUs($('.join-us .join-us-content h4'), $('.join-us .join-us-content h5'));
+                            }
+                        }
                     });
                 }
             });

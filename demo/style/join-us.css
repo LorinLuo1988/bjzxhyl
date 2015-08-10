@@ -32,11 +32,18 @@
 .join-us .join-us-bottom .content h4 {
     font-size: 18px;
     margin: 12px 0px;
+    cursor: pointer;
 }
 .join-us .join-us-bottom .content p {
     text-indent: 35px;
     line-height: 25px;
     font-size: 14px;
+}
+.join-us .join-us-bottom .content h5 {
+    text-indent: 35px;
+    line-height: 25px;
+    font-size: 14px;
+    cursor: pointer;
 }
 .join-us .join-us-bottom .content .join-us-content  .contact-email {
     margin: 86px 0px 50px 0px;
