@@ -32,7 +32,6 @@ window.windowCurrentUrl = 'primary';
             var navList = this.urlNav.find('li');
 
             navList.on('click', function () {
-                console.log(1)
                 if (!$(this).hasClass('imgShow')) {
                     windowCurrentUrl = $(this).attr('data-url');
                     navList.removeClass('imgShow');
@@ -47,10 +46,10 @@ window.windowCurrentUrl = 'primary';
 
                             if ($('.primary').length) {
                                 primaryObj.initialize();
-                            }
-
-                            if ($('.join-us .join-us-content h4').length) {
+                            } else  if ($('.join-us .join-us-content h4').length) {
                                 joinUsObj =  new JoinUs($('.join-us .join-us-content h4'), $('.join-us .join-us-content h5'));
+                            } else if ($('.hot-song').length) {
+                                hotSongObj.initialize($('.hot-song .pagination'));
                             }
                         }
                     });

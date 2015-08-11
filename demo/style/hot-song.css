@@ -75,4 +75,69 @@
 .hot-song .hot-song-bottom .content .song-list li.no-border-right {
     margin-right: 0px;
 }
-/*-------------hot-song-bottom start--------------*/
+.hot-song .hot-song-bottom .content .song-list li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url(img/song-bg/rgmyn.jpg);
+}
+.hot-song .hot-song-bottom .content .song-list li a img {
+    position: absolute;
+    right: 16px;
+    bottom: 18px;
+    display: none;
+}
+.hot-song .hot-song-bottom .content .song-list li a:hover img {
+    display: block;
+}
+.hot-song .hot-song-bottom .content .pagination {
+    margin: 50px 55px 205px 0px;
+    list-style-type: none;
+}
+.hot-song .hot-song-bottom .content .pagination li {
+    float: left;
+    padding: 12px;
+    border: 1px solid #e1e2e3;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+.hot-song .hot-song-bottom .content .pagination li.active {
+    cursor: not-allowed;
+}
+.hot-song .hot-song-bottom .content .pagination li.active {
+    border:none;
+}
+.hot-song .hot-song-bottom .content .pagination li.active a {
+    color: #333;
+}
+.hot-song .hot-song-bottom .content .pagination li.inactive:hover {
+    background-color: #bfbfbf;
+    border-color: #3c3c3c;
+}
+.hot-song .hot-song-bottom .content .pagination li.next:hover {
+    background-color: #bfbfbf;
+    border-color: #3c3c3c;
+}
+.hot-song .hot-song-bottom .content .pagination li.prev:hover {
+    background-color: #bfbfbf;
+    border-color: #3c3c3c;
+}
+.hot-song .hot-song-bottom .content .pagination li.inactive:hover a {
+    color: #ffffff;
+}
+.hot-song .hot-song-bottom .content .pagination li.prev:hover a {
+    color: #ffffff;
+}
+.hot-song .hot-song-bottom .content .pagination li.next:hover a {
+    color: #ffffff;
+}
+.hot-song .hot-song-bottom .content .pagination li a {
+    text-decoration: none;
+    color: #0000cc;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/*-------------hot-song-bottom end--------------*/
