@@ -2,18 +2,34 @@
  * Created by Administrator on 2015/8/11.
  */
 (function ($) {
-    var songObjArr = [{},{}];
-    var totalCount = songObjArr.length;
+    window.songObjArr = [];
+    window.songId = 1;
+    var totalCount = 0;
     var pageSize = 18;
 
-    var HotSong = function hotSong (songObjArr) {
+    $.ajax('json/song-list.json', {
+       success: function (response) {
+           songObjArr = response;
+           totalCount = songObjArr.length;
+           window.hotSongObj = new HotSong(songObjArr);
+       }
+    });
+
+    function HotSong  (songObjArr) {
         this.songObjArr = songObjArr;
     };
 
-    HotSong.prototype.initialize = function (paginationContainer) {
+    HotSong.prototype.initialize = function (paginationContainer, songContainer) {
         this.paginationContainer = paginationContainer;
-        this.pagination = new window.Pagination(55, 18, this.paginationContainer, this.songObjArr);
+        this.songContainer = songContainer;
+        this.eventBind();
+        this.pagination = new window.Pagination(totalCount, pageSize, this.paginationContainer, this.songObjArr, this.songContainer);
     };
 
-    window.hotSongObj = new HotSong();
+    HotSong.prototype.eventBind = function () {
+        $('.hot-song .song-list li').on('click', function () {
+            window.songId = $(this).attr('data-song-id');
+            window.open('song-play.html', 'song-play');
+        });
+    };
 })(jQuery)

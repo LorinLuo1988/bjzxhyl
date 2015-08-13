@@ -2,12 +2,13 @@
  * Created by Administrator on 2015/8/11.
  */
 (function ($) {
-    function  Pagination (totalCount, pageSize, paginationContainer, songObjArr) {
+    function  Pagination (totalCount, pageSize, paginationContainer, songObjArr, songContainer) {
         this.totalCount = totalCount;
         this.pageSize = pageSize;
         this.totalPage = Math.ceil(this.totalCount / this.pageSize);
         this.songObjArr = songObjArr;
         this.paginationContainer = paginationContainer;
+        this.songContainer = songContainer;
         this.currentPage = 1;
         this.currentPageDom = paginationContainer.find('.active');
 
@@ -28,6 +29,7 @@
         this.currentPageDom.next('.inactive').removeClass('inactive').addClass('active');
 
         this.currentPageDom = this.paginationContainer.find('.active');
+        this.songListChange();
     };
 
     Pagination.prototype.prevPage = function () {
@@ -40,6 +42,7 @@
         this.currentPageDom.prev('.inactive').removeClass('inactive').addClass('active');
 
         this.currentPageDom = this.paginationContainer.find('.active');
+        this.songListChange();
     };
 
     Pagination.prototype.fixPage = function (fixPageDom) {
@@ -47,7 +50,8 @@
         this.paginationContainer.find('.active').removeClass('active').addClass('inactive');
         fixPageDom.removeClass('inactive').addClass('active');
 
-        this.currentPageDom = this.paginationContainer.find('.active');;
+        this.currentPageDom = this.paginationContainer.find('.active');
+        this.songListChange();
     };
 
     Pagination.prototype.eventBind = function () {
@@ -63,6 +67,22 @@
                 self.fixPage($(this));
             }
         });
+    };
+
+    Pagination.prototype.songListChange = function () {
+        var currentPage = this.currentPage;
+        var pageSize = this.pageSize;
+        var songContainer = this.songContainer;
+        var songObjArr = this.songObjArr;
+
+        songContainer.find('li a img.bgImg').each(function (index, dom) {
+            var bgImg = songObjArr[(currentPage - 1) * pageSize + index].bgImg;
+            var songId = songObjArr[(currentPage - 1) * pageSize + index]["song-id"];
+
+            $(dom).attr('src', bgImg);
+            $(dom).parents('li').attr('data-song-id', songId);
+        });
+
     };
 
     window.Pagination = Pagination;

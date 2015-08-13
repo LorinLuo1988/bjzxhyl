@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>isSing-song-play</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="Resource-type" content="Document" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="style/video.css"/>
+    <link rel="icon" href="style/img/is-sing.png" type="image/x-icon"/>
+    <script src="scripts/lib/jquery/jquery-1.9.1.min.js"></script>
+    <script src="scripts/song-components/skel.min.js"></script>
+    <script src="scripts/song-components/skel-panels.min.js"></script>
+    <!--<script src="scripts/song-components/init.js"></script>-->
+</head>
+<body class="homepage">
+    <video id="video" class="video-js vjs-default-skin"
+           controls preload="auto" width="350" height="350"
+           poster="http://d1qras9pgk1wz4.cloudfront.net/s3-1439280421608_thumb.jpg"
+           data-setup='{"techOrder": ["html5", "flash", "other supported tech"]}'>
+           <source src="http://d1qras9pgk1wz4.cloudfront.net/s3-1439280451698.m4a" type='video/mp4' />
+    </video>
+
+<script>
+    (function ($) {
+        var opener = window.opener;
+        var songList = opener.songObjArr;
+        var songId = parseInt(opener.songId);
+        var bgImg  =songList[songId - 1].bgImg;
+        var songUrl  =songList[songId - 1]['song-url'];
+        $('#video').attr('poster',  bgImg);
+        $('#video').find('source').attr('src', songUrl);
+    })(jQuery);
+</script>
+</body>
+</html>

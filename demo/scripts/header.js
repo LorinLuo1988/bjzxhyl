@@ -49,7 +49,7 @@ window.windowCurrentUrl = 'primary';
                             } else  if ($('.join-us .join-us-content h4').length) {
                                 joinUsObj =  new JoinUs($('.join-us .join-us-content h4'), $('.join-us .join-us-content h5'));
                             } else if ($('.hot-song').length) {
-                                hotSongObj.initialize($('.hot-song .pagination'));
+                                hotSongObj.initialize($('.hot-song .pagination'), $('.song-list'));
                             }
                         }
                     });
