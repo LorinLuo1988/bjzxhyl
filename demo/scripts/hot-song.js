@@ -29,7 +29,7 @@
     HotSong.prototype.eventBind = function () {
         $('.hot-song .song-list li').on('click', function () {
             window.songId = $(this).attr('data-song-id');
-            window.open('song-play.html', 'song-play');
+            window.open('song-play.html', 'songPlay');
         });
     };
 })(jQuery)

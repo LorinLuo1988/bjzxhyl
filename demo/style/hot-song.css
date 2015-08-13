@@ -2,6 +2,9 @@
 .hot-song .hot-song-top {
     background: url(img/primary-top.jpg);
 }
+.hot-song a, .hot-song img {
+    border: none;
+}
 .hot-song .hot-song-top .content {
     width: 1000px;
     height: 216px;
