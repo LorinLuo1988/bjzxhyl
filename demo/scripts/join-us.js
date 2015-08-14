@@ -3,13 +3,11 @@
  */
 (function () {
     $(function () {
-        function JoinUs (jobTypeList, jobTypeContentList) {
+        function JoinUs () {};
+
+        JoinUs.prototype.initialize = function (jobTypeList, jobTypeContentList) {
             this.jobTypeList = jobTypeList;
             this.jobTypeContentList = jobTypeContentList;
-            this.initialize();
-        };
-
-        JoinUs.prototype.initialize = function () {
             this.jobTypeAnimation();
         };
 
@@ -31,6 +29,7 @@
             });
         };
 
-        window.JoinUs = JoinUs;
+        var joinUsObj = new JoinUs();
+        window.joinUsObj = joinUsObj;
     });
 })(jQuery)

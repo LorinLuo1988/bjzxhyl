@@ -153,6 +153,12 @@ body {
 .bg>.content {
     min-height: 800px;
 }
+.content>.contentShow {
+    display: block;
+}
+.content>.contentHide {
+    display: none;
+}
 /*------------footer end-----------*/
 .footer {
     width: 100%;

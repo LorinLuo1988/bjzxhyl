@@ -58,7 +58,7 @@
     padding-left: 15px;
 }
 .update-log .update-log-bottom .content .update-log-list {
-    margin: 68px 0px 0px 87.5px;
+    margin: 68px 0px 153px 87.5px;
     list-style-type: none;
 }
 .update-log .update-log-bottom .content .update-log-list-time {
@@ -80,6 +80,7 @@
 .update-log .update-log-bottom .content .update-log-list-content {
     float: left;
     padding-left: 38px;
+    padding-bottom: 136px;
     border-left: 1px solid #ccc;
     position: relative;
 }
@@ -98,7 +99,7 @@
 }
 .update-log .update-log-bottom .content .update-log-list .time-dot {
     position: absolute;
-    top: 50%;
+    top: 24px;
     left: -5px;
     margin-top: -4.5px;
 }

@@ -106,7 +106,8 @@
     var primaryObj = new Primary();
     window.primaryObj = primaryObj;
 
-    $('.content').load('template/' + windowCurrentUrl + '.html', function () {
-        primaryObj.initialize();;
-    });
+    primaryObj.initialize();
+//    $('.content').load('template/' + windowCurrentUrl + '.html', function () {
+//
+//    });
 })(jQuery)

@@ -5,6 +5,10 @@ window.windowCurrentUrl = 'primary';
 
 (function ($) {
     $(function () {
+        var primaryCount = 0;
+        var joinUsCount = 0;
+        var hotSongCount = 0;
+
         var Header = function (urlNav, languageToggle) {
             this.urlNav = urlNav;
             this.languageToggle = languageToggle;
@@ -37,22 +41,37 @@ window.windowCurrentUrl = 'primary';
                     navList.removeClass('imgShow');
                     $(this).addClass('imgShow');
 
-                    $.ajax('template/' + windowCurrentUrl + '.html', {
-                        type: "GET",
-                        success: function(response){
-                            window.scrollTo(0, 0);
+                    $('.bg>.content>.' + windowCurrentUrl).removeClass('contentHide').addClass('contentShow');
+                    $('.bg>.content>div:not(.' + windowCurrentUrl + ')').removeClass('contentShow').addClass('contentHide');
 
-                            $('.bg .content').html(response);
+                    if ($('.primary').hasClass('contentShow')) {
+                        primaryCount++;
 
-                            if ($('.primary').length) {
-                                primaryObj.initialize();
-                            } else  if ($('.join-us .join-us-content h4').length) {
-                                joinUsObj =  new JoinUs($('.join-us .join-us-content h4'), $('.join-us .join-us-content h5'));
-                            } else if ($('.hot-song').length) {
-                                hotSongObj.initialize($('.hot-song .pagination'), $('.song-list'));
-                            }
+                        if (primaryCount >= 2) {
+                            primaryCount  =1;
+                            return false;
                         }
-                    });
+
+                        primaryObj.initialize();
+                    } else  if ($('.join-us ').hasClass('contentShow')) {
+                        joinUsCount++;
+
+                        if (joinUsCount >= 2) {
+                            joinUsCount = 1;
+                            return false;
+                        }
+
+                        joinUsObj.initialize($('.join-us .join-us-content h4'), $('.join-us .join-us-content h5'));
+                    } else if ($('.hot-song').hasClass('contentShow')) {
+                        hotSongCount++;
+
+                        if (hotSongCount >= 2) {
+                            hotSongCount = 1;
+                            return false;
+                        }
+
+                        hotSongObj.initialize($('.hot-song .pagination'), $('.song-list'));
+                    }
                 }
             });
         };
@@ -78,6 +97,5 @@ window.windowCurrentUrl = 'primary';
         };
 
         var headerObj = new Header($('.header .url-nav'), $('.language-toggle'));
-//        $('.footer').load();
     });
 })(jQuery);
