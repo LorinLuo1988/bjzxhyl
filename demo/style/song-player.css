@@ -171,9 +171,12 @@ body {
 .song-player .links .share-list li {
     height: 50px;
     line-height: 50px;
-    color: #999899;
     font-size: 16px;
     position: relative;
+}
+.song-player .links .share-list li a {
+    color: #999899;
+    text-decoration: none;
 }
 .song-player .links .share-list li img.link-img {
     width: 40px;

@@ -107,14 +107,6 @@
 </div>
 <script>
     (function ($) {
-        var opener = window.opener;
-        var songList = opener.songObjArr;
-        var songId = parseInt(opener.songId);
-        var bgImg  =songList[songId - 1].bgImg;
-        var songUrl  =songList[songId - 1]['song-url'];
-        $('.song-bg').attr('src', bgImg);
-        $('#video').attr('poster',  bgImg);
-        $('#video').find('source').attr('src', songUrl);
         $(document).on('click', function (event) {
             if ($(event.target)[0] == $('.share')[0]) {
                 $('.link-list').toggle();
@@ -139,6 +131,16 @@
                     $(this).attr('src', 'style/img/Googleplay-download.png');
                 }
         );
+
+
+        var opener = window.opener;
+        var songList = opener.songObjArr;
+        var songId = parseInt(opener.songId);
+        var bgImg  =songList[songId - 1].bgImg;
+        var songUrl  =songList[songId - 1]['song-url'];
+        $('.song-bg').attr('src', bgImg);
+        $('#video').attr('poster',  bgImg);
+        $('#video').find('source').attr('src', songUrl);
     })(jQuery);
 </script>
 </body>
