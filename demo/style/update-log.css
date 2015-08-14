@@ -60,6 +60,7 @@
 .update-log .update-log-bottom .content .update-log-list {
     margin: 68px 0px 153px 87.5px;
     list-style-type: none;
+    position: relative;
 }
 .update-log .update-log-bottom .content .update-log-list-time {
     float: left;
@@ -80,8 +81,8 @@
 .update-log .update-log-bottom .content .update-log-list-content {
     float: left;
     padding-left: 38px;
-    padding-bottom: 136px;
-    border-left: 1px solid #ccc;
+    /*padding-bottom: 136px;*/
+    /*border-left: 1px solid #ccc;*/
     position: relative;
 }
 .update-log .update-log-bottom .content .update-log-list-content h4 {
@@ -97,9 +98,30 @@
     font: 12px '宋体';
     color: #000;
 }
+/*.update-log .update-log-bottom .content .update-log-list .time-dot {*/
+    /*position: absolute;*/
+    /*top: 24px;*/
+    /*left: -5px;*/
+    /*margin-top: -4.5px;*/
+/*}*/
 .update-log .update-log-bottom .content .update-log-list .time-dot {
     position: absolute;
-    top: 24px;
-    left: -5px;
+    z-index: 9999;
+    cursor: pointer;
+    top: 10px;
+    left: 81px;
     margin-top: -4.5px;
+}
+.update-log .update-log-bottom .content .update-log-list  li {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 136px;
+}
+.update-log .update-log-bottom .content .update-log-list .col-line {
+    position: absolute;
+    top: 0px;
+    left: 85px;
+    height: 100%;
+    width: 1px;
+    background-color: #cccccc;
 }
