@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="song-play.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="song-play.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/song-play.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24324325" vertical-offset="2235" max-vertical-offset="2910">
+            <state vertical-scroll-proportion="-10.384615" vertical-offset="1965" max-vertical-offset="2910">
               <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
               <folding>
                 <element signature="tag#div#0;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
@@ -75,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="song-player.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="song-player.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style/song-player.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="5393" max-vertical-offset="6000">
-              <caret line="178" column="26" selection-start-line="178" selection-start-column="26" selection-end-line="178" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.39538714" vertical-offset="0" max-vertical-offset="6090">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -120,8 +120,8 @@
         <option value="$PROJECT_DIR$/scripts/join-us.js" />
         <option value="$PROJECT_DIR$/scripts/hot-song.js" />
         <option value="$PROJECT_DIR$/scripts/header.js" />
-        <option value="$PROJECT_DIR$/style/song-player.css" />
         <option value="$PROJECT_DIR$/song-play.html" />
+        <option value="$PROJECT_DIR$/style/song-player.css" />
       </list>
     </option>
   </component>
@@ -629,14 +629,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/song-player.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5393" max-vertical-offset="6000">
-          <caret line="178" column="26" selection-start-line="178" selection-start-column="26" selection-end-line="178" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/header.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1253" max-vertical-offset="2040">
@@ -671,13 +663,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/song-play.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24324325" vertical-offset="2235" max-vertical-offset="2910">
+        <state vertical-scroll-proportion="-10.384615" vertical-offset="1965" max-vertical-offset="2910">
           <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
           <folding>
             <element signature="tag#div#0;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#video#0;tag#div#0;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/song-player.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39538714" vertical-offset="0" max-vertical-offset="6090">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -5,6 +5,9 @@
 body {
     font: 13px "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+img, a {
+    border: none;
+}
 .bg {
     width: 100%;
 }
