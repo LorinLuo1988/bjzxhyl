@@ -78,8 +78,9 @@
         songContainer.find('li a img.bgImg').each(function (index, dom) {
             var bgImg = songObjArr[(currentPage - 1) * pageSize + index].bgImg;
             var songId = songObjArr[(currentPage - 1) * pageSize + index]["song-id"];
+            var reg = /..\//;
 
-            $(dom).attr('src', bgImg);
+            $(dom).attr('src', bgImg.replace(reg, ''));
             $(dom).parents('li').attr('data-song-id', songId);
         });
 

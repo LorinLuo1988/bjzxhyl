@@ -32,6 +32,15 @@ img, a {
     width: 462px;
     padding: 13px 19px;
     background-color: #dedede;
+    position: relative;
+}
+.song-player .song-play .jquery_jplayer_1_bg {
+    position: absolute;
+    width: 462px;
+    height: 300px;
+    top: 13px;
+    left: 19px;
+    z-index: 9999;
 }
 .song-player #video {
     display: block;

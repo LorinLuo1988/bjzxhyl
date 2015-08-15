@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>isSing-song-play</title>
+    <meta charset="utf-8"/>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="Resource-type" content="Document" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../style/song-player.css"/>
+    <link rel="icon" href="../style/img/is-sing.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="skin/blue.monday/css/jplayer.blue.monday.css"/>
+</head>
+<body class="homepage">
+<div class="bg">
+    <div class="song-player clear-fix">
+        <div class="song-play pull-left">
+            <div id="jquery_jplayer_1" class="jp-jplayer">
+            </div>
+            <img class="jquery_jplayer_1_bg" src="" alt=""/>
+            <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+                <div class="jp-type-single">
+                    <div class="jp-gui jp-interface">
+                        <div class="jp-volume-controls">
+                            <button class="jp-mute" role="button" tabindex="0">mute</button>
+                            <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+                            <div class="jp-volume-bar">
+                                <div class="jp-volume-bar-value"></div>
+                            </div>
+                        </div>
+                        <div class="jp-controls-holder">
+                            <div class="jp-controls">
+                                <button class="jp-play" role="button" tabindex="0">play</button>
+                                <button class="jp-stop" role="button" tabindex="1">stop</button>
+                            </div>
+                            <div class="jp-progress">
+                                <div class="jp-seek-bar">
+                                    <div class="jp-play-bar"></div>
+                                </div>
+                            </div>
+                            <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+                            <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+                            <div class="jp-toggles">
+                                <button class="jp-repeat" role="button" tabindex="0">repeat</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jp-details">
+                        <div class="jp-title" aria-label="title">&nbsp;</div>
+                    </div>
+                    <div class="jp-no-solution">
+                        <span>Update Required</span>
+                        To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                    </div>
+                </div>
+            </div>
+            <div class="song-info clear-fix">
+                <img class="song-bg" src="../style/img/user-img.png" alt=""/>
+                <p><span class="singer">王菲/人间</span><label for="">5776次播放</label></p>
+                <p class="song-introduce">只要有音乐就没有世界末日</p>
+                <button type="button" class="share"></button>
+                <ul class="link-list">
+                    <li class="first-link">
+                        <a href="">
+                            <img src="../style/img/Facebook-1.png" alt=""/>
+                            <span>Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../style/img/Twitter-1.png" alt=""/>
+                            <span>Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../style/img/line.-1png" alt=""/>
+                            <span>Line</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="comment-list">
+                <li>
+                    <img src="../style/img/user-img.png" alt=""/>
+                    <h4>温馨与浪漫</h4>
+                    <p>好棒呀！大姐你唱的真好，太太太好啦。</p>
+                </li>
+                <li>
+                    <img src="../style/img/user-img.png" alt=""/>
+                    <h4>温馨与浪漫</h4>
+                    <p>好棒呀！大姐你唱的真好，太太太好啦。</p>
+                </li>
+                <li>
+                    <img src="../style/img/user-img.png" alt=""/>
+                    <h4></h4>
+                    <p></p>
+                </li>
+                <li>
+                    <img src="../style/img/user-img.png" alt=""/>
+                    <h4></h4>
+                    <p></p>
+                </li>
+            </ul>
+        </div>
+        <div class="links pull-left">
+            <img class="quick-mark" src="../style/img/hot-song-quick-mark.png" alt=""/>
+            <p class="scan-quick-mark">扫描二维码</p>
+            <button class="android-play-download-btn" type="button"><img class="android-play-download" src="../style/img/Android-download.png" alt=""></button>
+            <button class="google-play-download-btn" type="button"><img class="google-play-download" src="../style/img/Googleplay-download.png" alt=""></button>
+            <ul class="share-list">
+                <li>
+                    <a href="">
+                        <img class="link-img" src="../style/img/Facebook-1.png" alt=""/>
+                        Facebook
+                        <img class="arrow-right" src="../style/img/arrow-right.png" alt=""/>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img class="link-img" src="../style/img/Twitter-1.png" alt=""/>
+                        Twitter
+                        <img class="arrow-right" src="../style/img/arrow-right.png" alt=""/>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img class="link-img" src="../style/img/line.-1png" alt=""/>
+                        Line
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.js"></script>
+<script>
+    $(document).ready(function(){
+        var opener = window.opener;
+        var songList = opener.songObjArr;
+        var songId = parseInt(opener.songId);
+        var bgImg  =songList[songId - 1].bgImg;
+        var songUrl  =songList[songId - 1]['song-url'];
+        var songName  =songList[songId - 1]['song-name'];
+        $('.song-bg').attr('src', bgImg);
+        $('#video').attr('poster',  bgImg);
+        $('#video').find('source').attr('src', songUrl);
+        $(document).ready(function(){
+            $('.jquery_jplayer_1_bg').attr('src', bgImg);
+            $("#jquery_jplayer_1").jPlayer({
+                ready: function() {
+                    $(this).jPlayer("setMedia", {
+                        title: songName,
+                        mp3: "http://www.jplayer.org/audio/mp3/Miaow-snip-Stirring-of-a-fool.mp3"
+                    }).jPlayer("play").jPlayer("repeat");
+                    var click = document.ontouchstart === undefined ? 'click' : 'touchstart';
+                    var kickoff = function () {
+                        $("#jquery_jplayer_1").jPlayer("play");
+                        document.documentElement.removeEventListener(click, kickoff, true);
+                    };
+                    document.documentElement.addEventListener(click, kickoff, true);
+                    $('#jquery_jplayer_1 img').css({
+                        width: '100%',
+                        height: '100%',
+                        display: 'block'
+                    });
+                },
+                supplied: "mp3",
+                swfPath: "js/",
+                loop: true,
+                size: {
+                    width: '100%',
+                    height: '300px',
+                    cssClass: 'jp-video-270'
+                },
+                smoothPlayBar: true,
+                remainingDuration: true,
+                toggleDuration: true,
+                playbackRate: 0,
+                volume: 0.5,
+                keyEnabled: true,
+                useStateClassSkin: true,
+                wmode: 'transparent',
+                autoBlur: false
+            });
+        });
+    });
+</script>
+</body>
+</html>

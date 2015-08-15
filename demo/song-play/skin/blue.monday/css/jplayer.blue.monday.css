@@ -37,7 +37,9 @@
   background-color: #eee; }
 
 .jp-audio {
-  width: 420px; }
+  width: 460px;
+  /*border-width: 1px 0px;*/
+}
 
 .jp-audio-stream {
   width: 182px; }
@@ -197,7 +199,7 @@
 
 .jp-audio .jp-type-single .jp-progress {
   left: 110px;
-  width: 186px; }
+  width: 203px; }
 
 .jp-audio .jp-type-playlist .jp-progress {
   left: 166px;
@@ -231,9 +233,11 @@
 
 .jp-volume-controls {
   position: absolute;
-  top: 32px;
-  left: 308px;
-  width: 200px; }
+  top: 24px;
+  left: 337px;
+  width: 200px;
+    z-index: 9999;
+}
 
 .jp-audio-stream .jp-volume-controls {
   left: 70px; }
@@ -343,7 +347,8 @@
 
 .jp-type-single .jp-details,
 .jp-type-playlist .jp-details {
-  border-top: none; }
+  border-top: none;
+}
 
 .jp-details .jp-title {
   margin: 0;
